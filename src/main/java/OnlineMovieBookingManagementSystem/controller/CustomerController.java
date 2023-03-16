@@ -24,7 +24,7 @@ public class CustomerController {
 	@PostMapping("/insertcustomer")
 	public String insertCustomer(@RequestBody Customer newCustomer) {
 		custService.insertCustomer(newCustomer);
-		return "Customer added successfully!!";
+		return "Customer added successfully!";
 	}	
 		@DeleteMapping("/deletecustomer/{cusid}")
 		public void deleteCustomer( @PathVariable ("cusid")Long custid ){
